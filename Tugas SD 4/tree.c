@@ -13,7 +13,6 @@ struct Tree {
     Node *root;
 };
 
-// ===== INTERNAL =====
 Node* createNode(char jabatan[]) {
     Node *newNode = (Node*) malloc(sizeof(Node));
     strcpy(newNode->jabatan, jabatan);
@@ -46,8 +45,6 @@ void print(Node *root, int level) {
     print(root->firstChild, level + 1);
     print(root->nextSibling, level);
 }
-
-// ===== PUBLIC ADT =====
 
 Tree* createTree() {
     Tree *t = (Tree*) malloc(sizeof(Tree));

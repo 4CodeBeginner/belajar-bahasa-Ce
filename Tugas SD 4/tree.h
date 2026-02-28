@@ -3,7 +3,6 @@
 
 typedef struct Tree Tree;
 
-// ADT Operations
 Tree* createTree();
 void destroyTree(Tree *t);
 
